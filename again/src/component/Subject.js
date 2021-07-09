@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 
 class Subject extends Component {
     render() {
+      console.log('Subject render');
       return (
         <header>  
           {/* href="/"가 링크 거는방법 */}
