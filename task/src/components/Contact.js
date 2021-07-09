@@ -1,15 +1,13 @@
 import React from 'react'
 
-function contact() {
+function Contact() {
     return (
-        <div>
-            e-mail
+        
             <form>
                 <input type="email">
                 <input type="text">
             </form>
-        </div>
-    )
+    );
 }
 
-export default contact;
+export default Contact
