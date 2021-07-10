@@ -33,21 +33,14 @@ class App extends Component {
     }
     return(
     <div className="App">
-      {/* <Subject 
+      <Subject //sub에 onchangepage라는 이벤트를 만들었음
         title={this.state.subject.title} 
-        sub={this.state.subject.sub}>
-      </Subject>    */}
-       <header> 
-          <h1><a href="/" onClick={function(e){
-            console.log(e);
-            e.preventDefault();
-            // this.state.mode='welcome';
-            this.setState({
-              mode:'welcome'
-            });
-          }.bind(this)}>{this.state.subject.title}</a></h1>
-          {this.state.subject.title}
-          </header>
+        sub={this.state.subject.sub}
+        onChangePage={function(){
+          this.setState({mode:'welcome'});
+        }.bind(this)}
+        >
+      </Subject>
       <TOC data={this.state.contents}></TOC>
       <Content title={_title} desc={_desc}></Content>
     </div>
